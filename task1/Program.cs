@@ -4,12 +4,14 @@
 //a = 2 b = 10 -> max = 10
 //a = -9 b = -3 -> max = -3
 
+int a = -9;
+int b = -3;
 
+int max = a;
 
+if(a > max) max = a;
+if(b > max) max = b;
 
- var n1 = Decimal.Parse(Console.ReadLine());
-            var n2 = Decimal.Parse(Console.ReadLine());
-            if (n1 > n2)
-                Console.WriteLine(n1);
-            else 
-                Console.WriteLine(n2);
+Console.Write("max = ");
+Console.WriteLine(max);
+
